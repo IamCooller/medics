@@ -197,8 +197,6 @@ html {
     font-weight: 600;
     font-size: 16px;
     line-height: 20px;
-    display: flex;
-    align-items: center;
     text-transform: uppercase;
     color: #495494;
     margin-bottom: 45px;
@@ -1230,6 +1228,9 @@ html {
         margin-bottom: 34px;
         justify-content: center;
     }
+    .reception__left {
+        padding: 35px 26px 34px 79px;
+    }
     .fixed__phone {
         right: 13px;
         bottom: 20px;
@@ -1245,10 +1246,10 @@ html {
         line-height: 22px;
     }
     .reception__right-left {
-        padding: 35px 26px 34px 79px;
+        padding: 35px 70px 30px;
     }
     .reception__right-right {
-        padding: 35px 71px 43px 84px;
+        padding: 35px 70px 30px;
     }
     .about .container {
         flex-direction: column-reverse;
@@ -1526,14 +1527,14 @@ html {
 
 @media (max-width:570px) {
     .reception__left {
-        padding: 35px 40px 30px;
+        padding: 35px 70px 30px;
     }
     .reception__left-title {
         font-size: 15px;
     }
     .reception__left-title svg {
-        left: -27.9px;
-        max-width: 26px;
+        left: -40.9px;
+        top: -7px;
     }
     .reception__left form {
         display: flex;
@@ -1549,7 +1550,21 @@ html {
         flex-direction: column;
     }
     .reception__right-right {
-        padding: 35px 40px 43px 45px;
+        padding: 35px 70px 30px;
+    }
+    .reception .container {
+        flex-direction: column;
+    }
+}
+
+@media (max-width:360px) {
+    .reception__right {
+        max-width: 320px;
+    }
+    .reception__right-right,
+    .reception__right-left,
+    .reception__left {
+        padding: 35px 46px 30px;
     }
 }
 
